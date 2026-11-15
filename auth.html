@@ -116,6 +116,18 @@ document.getElementById("login").onclick = async () => {
   message.textContent="Login successful! Welcome to KeyForge.";
  }
 };
+ document.getElementById("togglePassword").onclick = () => {
+  const password = document.getElementById("password");
+  const button = document.getElementById("togglePassword");
+
+  if (password.type === "password") {
+    password.type = "text";
+    button.textContent = "🙈";
+  } else {
+    password.type = "password";
+    button.textContent = "👁️";
+  }
+};
 </script>
 </body>
 </html>
