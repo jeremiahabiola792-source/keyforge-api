@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KeyForge API</title>
+<style>
+* {box-sizing:border-box;margin:0;padding:0}
+body {
+  font-family:Arial,sans-serif;
+  background:#0b1020;
+  color:#fff;
+  min-height:100vh;
+}
+header {
+  padding:22px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #202943;
+}
+.logo {font-size:23px;font-weight:bold;color:#65e6ad}
+nav a {color:#aaa;text-decoration:none;margin-left:20px}
+main {max-width:950px;margin:80px auto;padding:20px;text-align:center}
+h1 {font-size:43px;margin-bottom:18px}
+h1 span {color:#65e6ad}
+p {color:#aab4cc;line-height:1.7}
+.panel {
+  background:#151e34;
+  border:1px solid #283652;
+  border-radius:15px;
+  padding:30px;
+  margin:40px auto;
+  max-width:600px;
+}
+button {
+  background:#65e6ad;
+  color:#07140e;
+  padding:14px 25px;
+  border:0;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top:22px;
+}
+button:hover {background:#45c993}
+footer {text-align:center;color:#78839b;padding:30px}
+@media(max-width:600px) {
+ h1 {font-size:32px}
+ nav a {margin-left:8px;font-size:13px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">⚡ KeyForge API</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#dashboard">Dashboard</a>
+  </nav>
+</header>
+
+<main id="home">
+  <h1>Build. Connect. <span>Authenticate.</span></h1>
+  <p>Your API keys, your applications, your control.
+  Generate and manage secure API credentials
+  from one simple platform.</p>
+
+  <div class="panel" id="dashboard">
+    <h2>Welcome to KeyForge</h2>
+    <p>Secure API key management starts here.</p>
+    <button onclick="alert('Account registration will be connected in the next stage!')">
+      Get Started
+    </button>
+  </div>
+</main>
+
+<footer>
+  © 2026 KeyForge API. All rights reserved.
+</footer>
+</body>
+</html>
